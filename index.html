@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog Preview Card (Bootstrap)</title>
+  <title>Blog Preview Card (Bootstrap Version)</title>
   <!-- Google Fonts: Figtree -->
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -12,6 +12,9 @@
     body {
       background-color: hsl(47, 88%, 63%);
       font-family: 'Figtree', sans-serif;
+    }
+    .card-img-top {
+      border-radius: 0.5rem;
     }
     .author-img {
       width: 40px;
@@ -24,23 +27,26 @@
 <body class="d-flex justify-content-center align-items-center vh-100">
 
   <div class="card p-3 shadow rounded-3" style="width: 22rem;">
-    <img src="images/pic1.jpg" class="card-img-top rounded" alt="Blog preview image">
+    <img src="images/pic1.jpg" class="card-img-top" alt="Blog preview image">
     <div class="card-body">
       <span class="badge bg-warning text-dark mb-2">Learning</span>
       <h6 class="text-muted">Published 5/5/2025</h6>
       <h5 class="card-title fw-bold">HTML & CSS foundations</h5>
       <p class="card-text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      <div class="d-flex align-items-center mb-3">
+      
+      <!-- ✅ Read More Button -->
+      <a href="https://www.90dayz2fitness.com/" class="btn btn-primary mt-3" target="_blank">Read More</a>
+      
+      <div class="d-flex align-items-center mt-3">
         <img src="images/pic2.JPG" alt="Author image" class="author-img me-2">
         <p class="m-0 fw-semibold">Brenda McCants</p>
       </div>
-      <!-- ✅ ADDED Bootstrap Button -->
-      <a href="#" class="btn btn-primary w-100">Read More</a>
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS (optional for components like modals, dropdowns) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
